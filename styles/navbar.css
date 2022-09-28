@@ -1,0 +1,136 @@
+body{
+    height: 1500px;
+     margin: 0;
+     font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+#dropdown{
+     width: 20%;
+     color: black;
+     height: 80px;
+}
+
+ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     position: absolute;
+     
+}
+
+ul li {
+     float: left;
+     margin-top: 20px;
+
+}
+
+ul li a{
+     width: 80px;
+     color: rgb(16, 15, 15);
+     display: block;
+     text-decoration: none;
+     font-size: 17px;
+     text-align: center;
+     padding: 10px;
+     
+}
+a:hover{
+     background-color: #eeeeea;
+}
+ul li ul{
+     background-color: #eeeeea;
+}
+
+ul li ul li {
+     float: none;
+}
+ ul li ul{
+     display: none;
+ }
+
+ ul li:hover ul{
+     display: block;
+     padding: 10px;
+}
+ul li ul li:hover {
+     color: #98cb4c;
+     transition: cubic-bezier();
+}
+#top{
+     padding: 11px;
+     margin-top: -19px;
+     text-align: center;
+     height: 35px;
+     line-height: 18px;
+     color: white;
+     background-color: #437111;
+     
+}
+ #menu{
+    
+     display: flex;
+     height: 70px;
+     justify-content:space-around ;
+     background-color:  #eeeeea;
+    
+ }
+ #logo img{
+     width: 140px;
+     margin-top: 15px;
+     margin-left: -100px;
+ }
+ #funtn img{
+     margin-top: -6px;
+     width: 40px;
+ }
+ #funtn{
+     border: 0px solid red;
+     width: 200px;
+     display: flex;
+ }
+ #funtn div{
+     padding-top: 24px;
+     text-align: center;
+     width: 25%;
+ }
+ #funtn div:hover{
+     cursor: pointer;
+ }
+ #funtn div div{
+         border: 1px solid rgb(228, 226, 226);
+         width:300px;
+         height: 50px;
+         background-color: white;
+         position: relative;
+         top: 28px;
+         right: 240px;
+         padding: 15px 10px 8px 10px;
+         display: none;
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+ }
+ #funtn div div input{
+     height: 35px;
+     width: 72%;
+     font-size: 17px;
+ }
+ #funtn div div button{
+     height: 40px;
+     font-size: 16px;
+     border: none;
+     color: white;
+     background-color: #98cb4c;
+ }
+ #funtn div div button:hover{
+     cursor: pointer;
+     background-color: #b3dc77;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+ }
+ #funtn div:hover div{
+     display: block;
+ }
+
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
