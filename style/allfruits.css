@@ -1,0 +1,47 @@
+body {
+    background-color: #eeeeea;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 10px; */
+}
+
+#products img {
+    width: 220px;
+    height: 220px;
+    border-radius: 30px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+#products h3 {
+
+    /* border: 1px solid red; */
+    position: absolute;
+    /* top: 0; */
+}
+
+#products img:hover {
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+
+
+
+#products p {
+    text-align: center;
+    font-family: "PT Sans";
+    font-weight: 400;
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+#price {
+    color: #cd171f;
+    font-size: 24px;
+    font-family: "PT Sans";
+    width: 100%;
+
+}
