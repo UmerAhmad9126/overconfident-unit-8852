@@ -149,14 +149,11 @@ const appendData = (data) => {
         price.innerText = `₹${el.price}`;
         price.id = "price"
 
-        let h3 = document.createElement("h3")
-        h3.innerText = "ADD TO CART"
+        let addTocartBtn = document.createElement("button")
+        addTocartBtn.innerText = "ADD TO CART"
 
-        div.append(img, name, price);
+        div.append(img, name, price, addTocartBtn);
         container.append(div);
-
-
-
     });
 
 }
