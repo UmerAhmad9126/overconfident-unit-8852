@@ -39,6 +39,7 @@ const navbar = () => {
           <div><input type="text" id="search" placeholder="Search for product"><button>Search</button></div> </div>
           <div><i class="fa-solid fa-user"></i></div>
           <div><i class="fa-solid fa-bag-shopping"></i></div>
+          <span class="cart_add">0</span>
      </div>
 </div`
 

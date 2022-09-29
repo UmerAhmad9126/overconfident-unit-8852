@@ -126,12 +126,34 @@ let data = [
     },
 ];
 
+import { navbar } from "./components/navbar.js";
+let navbar_div = document.getElementById("navbar");
+navbar_div.innerHTML = navbar();
+
+import { footer } from "./components/footer.js";
+let footer_div = document.getElementById("footer");
+footer_div.innerHTML = footer();
+
+// window.onscroll = function () { myFunction() };
+// var header = document.getElementById("menu");
+// var sticky = header.offsetTop;
+// function myFunction() {
+//     if (window.pageYOffset > sticky) {
+//         header.classList.add("sticky");
+//     } else {
+//         header.classList.remove("sticky");
+//     }
+// };
+
+
+
 
 
 const appendData = (data) => {
 
     let container = document.getElementById("products");
     container.innerHTML = null;
+    let count = 0;
 
     data.forEach(el => {
 
@@ -152,12 +174,21 @@ const appendData = (data) => {
         let addTocartBtn = document.createElement("button")
         addTocartBtn.innerText = "ADD TO CART"
 
+        addTocartBtn.addEventListener("click", function () {
+            count++;
+            // console.log('count:', count)
+            let item_count = document.querySelector(".cart_add");
+            item_count.innerHTML = count
+        })
+
         div.append(img, name, price, addTocartBtn);
         container.append(div);
     });
 
 }
 appendData(data);
+
+
 
 
 

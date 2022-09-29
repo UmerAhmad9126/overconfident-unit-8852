@@ -134,3 +134,21 @@ ul li ul li:hover {
     top: 0;
     width: 100%;
   }
+
+  .cart_add{
+    height: 20px;
+    background-color: #98cb4c;
+    padding: 0;
+    margin-left: 0;
+    font-size: 10px;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    /* position: absolute; */
+    
+    /* margin-right: 100px; */
+    /* margin-top: 10px; */
+  }
