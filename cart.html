@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>cart</title>
+     <style>
+          
+          #cart{
+               width: 26%;
+               border: 1px solid red;
+               margin-left: 1130px;
+
+          }
+          #cartnav{
+               background-color: black;
+               width: 95%;
+               margin: auto;
+               height: 80px;
+               color: white;
+               display: flex;
+               padding-top: 10px;
+               justify-content: space-between;
+          }
+          #cartnav >div:nth-child(1) {
+               margin-left: 20px;
+          }
+          #cartnav >div:nth-child(2) {
+               margin-right: 40px;
+               margin-top: 23px;
+          }
+          #cartamount{
+               border: 0px solid black;
+               display: flex;
+               width: 90%;
+               padding-left: 30px;
+               justify-content: space-between;
+          }
+          #cartamount >div:nth-child(2){
+               margin-right: 80px;
+               margin-top: 16px;
+               font-size: 24px;
+               color: #98cb4c;
+          }
+          button{
+               width: 93%;
+               margin-left: 15px;
+               height: 45px;
+               font-size: 16px;
+               margin-bottom: 15px;
+               border: none;
+               
+          }
+         
+          button:hover{
+               cursor: pointer;
+               background-color: rgb(79, 79, 79);
+               color: white;
+          }
+          hr{
+               margin-left: 12px;
+               margin-right: 12px;
+              
+          }
+          p{
+               text-align: center;
+          }
+          a{
+               text-decoration: none;
+               color: white;
+               
+          }
+     </style>
+</head>
+<body>
+     
+
+     <div id="cart">
+
+          <div id="cartnav">
+               <div><h2>SHOPPING CART</h2></div>
+               <div><a href="navbar.html">CLOSE- X</a></div>
+          </div>
+          <div id="cart-container"></div>
+          <hr>
+          <div id="cartamount">
+               <div><h3>SUBTOTAL:</h3></div>
+               <div id="total">000</div>
+          </div>
+          <hr>
+          <p>No tax on fresh fruits. Free shipping above Rs. 350.</p>
+          <button style="color: #98cb4c;">CHECK OUT</button>
+          <button>CONTINUE SHOPPING</button>
+
+     </div>
+     
+</body>
+</html>
+<script src="cart.js"></script>
+
