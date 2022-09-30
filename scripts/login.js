@@ -1,19 +1,23 @@
+import {navbar}  from "../components/navbar.js"
+
+     let nav = document.getElementById('navbar')
+     nav.innerHTML = navbar()
+
+
+
+
 document.getElementById("login").style.display = "none";
 document.getElementById("signup").style.display = "none";
 
+document.getElementById("EnableLogin").addEventListener("click",EnableLogin)
+
 function EnableLogin() {
+  console.log("safdgfdh")
   document.getElementById("login").style.display = "block";
   document.getElementById("signup").style.display = "none";
 }
 
-$(document).ready(function () {
-  $("#cancel").mouseenter(function () {
-    $("#cancel>i").toggleClass("fa-minus fa-xmark");
-  });
-  $("#cancel").mouseleave(function () {
-    $("#cancel>i").toggleClass("fa-minus fa-xmark");
-  });
-});
+
 
 let close = document.querySelector("#cancel");
 close.addEventListener("click", function () {
@@ -43,7 +47,7 @@ login.addEventListener("click", function () {
 
     if (email == el.email && password == el.password) {
       alert("Login successful!!");
-      window.location.href = "./index.html";
+      window.location.href = "index.html";
     } else alert("Please enter valid credentials.");
   });
 });

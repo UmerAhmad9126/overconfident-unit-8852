@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://kit.fontawesome.com/f205abf1eb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+     <script src="https://kit.fontawesome.com/d1d18244ac.js" crossorigin="anonymous"></script>
+     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0449/5225/6667/files/fav_12dcb22d-f3e3-4662-886b-1dae4e60e297_32x.png?v=1598337573" type="image/png">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="styles/navbar.css">
+     <link rel="stylesheet" href="./styles/login.css">
+     
+</head>
+
+<body>
+     <div id="navbar"></div>
+     
+</body>
+</html>
+<script type="module">
+
+     import {navbar}  from "./components/navbar.js"
+
+     let nav = document.getElementById('navbar')
+     nav.innerHTML = navbar()
+
+// sticky
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("menu");
+var sticky = header.offsetTop;
+
+
+// side menu
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+</script>
+<script type="module" src="./scripts/login.js"></script>

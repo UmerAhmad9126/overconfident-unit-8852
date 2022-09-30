@@ -33,3 +33,34 @@ h3:hover{
 hr{
     border: 0.5px solid rgb(122, 120, 120);
 }
+
+
+/*medium screen*/
+@media all and (min-width:651px) and  (max-width:950px){
+    
+
+ 
+ }
+ 
+ 
+ /*small Screen*/
+ @media all and (min-width:350px) and (max-width:650px){
+    
+     #ftop{
+          display: flex;
+          width: 100%;
+          line-height:15px;
+          flex-direction: column;
+         
+     }
+     #fbottom{
+          font-size: 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+     }
+     #fbottom div{
+          margin-bottom: 25px;
+     }
+ }

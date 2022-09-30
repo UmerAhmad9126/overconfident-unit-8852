@@ -13,9 +13,9 @@ const footer =() =>{
 
           <div>
                <h3>Follow us on</h3>
-               <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt="facebook">
-               <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt="Instagram">
-               <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt="twitter">
+               <a href="https://www.facebook.com/KimayeFruits/" target="_blank""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt="facebook"></a>     
+               <a href="https://www.instagram.com/kimayefruits/" target="_blank""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt="Instagram"></a>    
+               <a href="https://twitter.com/kimaye_ini" target="_blank""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt="twitter"></a>    
           </div>
      </div>
      <hr>
