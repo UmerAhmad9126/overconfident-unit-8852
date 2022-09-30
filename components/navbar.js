@@ -26,7 +26,7 @@ const navbar = () => {
                          <li>BEYOND FRUITS</li>
                     </ul>
                </li>
-               <li><a href="">GROW</a></li>
+               <li><a href="./growpage/grow.html">GROW</a></li>
           </ul>
      </div>
      <div id="logo">

@@ -126,6 +126,10 @@ let data = [
     },
 ];
 
+let cartArr = JSON.parse(localStorage.getItem("cart_item")) || [];
+
+
+
 import { navbar } from "./components/navbar.js";
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
@@ -134,16 +138,16 @@ import { footer } from "./components/footer.js";
 let footer_div = document.getElementById("footer");
 footer_div.innerHTML = footer();
 
-// window.onscroll = function () { myFunction() };
-// var header = document.getElementById("menu");
-// var sticky = header.offsetTop;
-// function myFunction() {
-//     if (window.pageYOffset > sticky) {
-//         header.classList.add("sticky");
-//     } else {
-//         header.classList.remove("sticky");
-//     }
-// };
+window.onscroll = function () { myFunction() };
+var header = document.getElementById("menu");
+var sticky = header.offsetTop;
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+};
 
 
 
@@ -153,9 +157,8 @@ const appendData = (data) => {
 
     let container = document.getElementById("products");
     container.innerHTML = null;
-    let count = 0;
 
-    data.forEach(el => {
+    data.forEach((el, index) => {
 
         let div = document.createElement("div");
         div.className = "fruit_list"
@@ -175,10 +178,8 @@ const appendData = (data) => {
         addTocartBtn.innerText = "ADD TO CART"
 
         addTocartBtn.addEventListener("click", function () {
-            count++;
-            // console.log('count:', count)
-            let item_count = document.querySelector(".cart_add");
-            item_count.innerHTML = count
+            addtoCart(index)
+            window.location.href="./allfruits.html"
         })
 
         div.append(img, name, price, addTocartBtn);
@@ -187,6 +188,14 @@ const appendData = (data) => {
 
 }
 appendData(data);
+
+let item_count = document.querySelector(".cart_add");
+item_count.innerHTML = cartArr.length;
+
+const addtoCart = (index) => {
+    cartArr.push(data[index]);
+    localStorage.setItem("cart_item", JSON.stringify(cartArr))
+}
 
 
 
