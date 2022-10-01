@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-     <link rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>cart</title>
-     <style> 
-          #cart{
+     <style>
+          #cart {
                width: 26%;
                border: 1px solid red;
                margin-left: 1130px;
 
           }
-          #cartnav{
+
+          #cartnav {
                background-color: black;
                width: 95%;
                margin: auto;
@@ -28,77 +29,100 @@
                padding-top: 10px;
                justify-content: space-between;
           }
-          #cartnav >div:nth-child(1) {
+
+          #cartnav>div:nth-child(1) {
                margin-left: 20px;
           }
-          #cartnav >div:nth-child(2) {
+
+          #cartnav>div:nth-child(2) {
                margin-right: 40px;
                margin-top: 23px;
           }
-          #cartamount{
+
+          #cartamount {
                border: 0px solid black;
                display: flex;
                width: 90%;
                padding-left: 30px;
                justify-content: space-between;
           }
-          #cartamount >div:nth-child(2){
+
+          #cartamount>div:nth-child(2) {
                margin-right: 80px;
                margin-top: 16px;
                font-size: 24px;
                color: #98cb4c;
           }
-          button{
+
+          button {
                width: 93%;
                margin-left: 15px;
                height: 45px;
                font-size: 16px;
                margin-bottom: 15px;
                border: none;
-               
+
           }
-         
-          button:hover{
+
+          button:hover {
                cursor: pointer;
                background-color: rgb(79, 79, 79);
                color: white;
           }
-          hr{
+
+          hr {
                margin-left: 12px;
                margin-right: 12px;
-              
+
           }
-          p{
+
+          p {
                text-align: center;
           }
-          a{
+
+          a {
                text-decoration: none;
                color: white;
-               
+
           }
-          #cart-container{
+
+          #cart-container {
                display: flex;
                padding: 12px;
-                         }
-          #productimage{
+               border: 1px solid gray;
+               /* gap: ; */
+          }
+
+          #cart-container2 {
+               display: flex;
+               grid-template-columns: repeat(1,1fr);
+
+
+          }
+
+          #productimage {
                border: 1px solid red;
                height: 60px;
                width: 20%;
           }
-          #productimage img{
+
+          #productimage img {
                width: 100%;
           }
-          #productdata{
+
+          #productdata {
                border: 1px solid rgb(37, 139, 23);
                height: 100px;
                width: 80%;
                line-height: 8px;
           }
-          #deleteproduct{
+
+          #deleteproduct {
                border: 1px solid blue;
                height: 10%;
           }
-          #quantity{
+
+          #quantity {
                display: flex;
                justify-content: center;
                align-items: center;
@@ -108,38 +132,50 @@
                margin-top: -10px;
                margin-left: 20px;
           }
-          #minus,#plus{
+
+          #minus,
+          #plus {
                width: 50px;
                height: 18px;
                background-color: rgb(233, 230, 230);
           }
-          #demoInput{
+
+          #demoInput {
                width: 30px;
                height: 15px;
                margin-top: -10px;
                margin-right: -15px;
-              
+
           }
-          #pdprice{
+
+          #pdprice {
                margin-left: 20px;
                margin-top: -6px;
                color: green;
           }
-          #weight{
+
+          #weight {
                color: grey;
           }
      </style>
 </head>
+
 <body>
-     
+
 
      <div id="cart">
 
           <div id="cartnav">
-               <div><h2>SHOPPING CART</h2></div>
+               <div>
+                    <h2>SHOPPING CART</h2>
+               </div>
                <div><a id="cancel" href="#" class="a">CLOSE <i class="fa-solid fa-minus"></i></a></div>
           </div>
           <div id="cart-container">
+
+               <div id="cart-container2">
+
+               </div>
                <!-- <div id="productimage"></div>
                <div id="productdata">
                     <p>qwerdhftjhgfdfghjkhfdsdfgh</p>
@@ -153,13 +189,15 @@
                     </div>
                     
                </div> -->
-               
+
                <div id="deleteproduct">x</div>
           </div>
           <hr>
           <div id="cartamount">
-               <div><h3>SUBTOTAL:</h3></div>
-               <div id="total">000</div>
+               <div>
+                    <h3>SUBTOTAL:</h3>
+               </div>
+               <div id="total"></div>
           </div>
           <hr>
           <p>No tax on fresh fruits. Free shipping above Rs. 350.</p>
@@ -167,11 +205,11 @@
           <button>CONTINUE SHOPPING</button>
 
      </div>
-     
+
 </body>
+
 </html>
 <script src="cart.js"></script>
 <script>
-     
-</script>
 
+</script>
