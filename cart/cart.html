@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>cart</title>
+     <style> 
+          #cart{
+               width: 26%;
+               border: 1px solid red;
+               margin-left: 1130px;
+
+          }
+          #cartnav{
+               background-color: black;
+               width: 95%;
+               margin: auto;
+               height: 80px;
+               color: white;
+               display: flex;
+               padding-top: 10px;
+               justify-content: space-between;
+          }
+          #cartnav >div:nth-child(1) {
+               margin-left: 20px;
+          }
+          #cartnav >div:nth-child(2) {
+               margin-right: 40px;
+               margin-top: 23px;
+          }
+          #cartamount{
+               border: 0px solid black;
+               display: flex;
+               width: 90%;
+               padding-left: 30px;
+               justify-content: space-between;
+          }
+          #cartamount >div:nth-child(2){
+               margin-right: 80px;
+               margin-top: 16px;
+               font-size: 24px;
+               color: #98cb4c;
+          }
+          button{
+               width: 93%;
+               margin-left: 15px;
+               height: 45px;
+               font-size: 16px;
+               margin-bottom: 15px;
+               border: none;
+               
+          }
+         
+          button:hover{
+               cursor: pointer;
+               background-color: rgb(79, 79, 79);
+               color: white;
+          }
+          hr{
+               margin-left: 12px;
+               margin-right: 12px;
+              
+          }
+          p{
+               text-align: center;
+          }
+          a{
+               text-decoration: none;
+               color: white;
+               
+          }
+          #cart-container{
+               display: flex;
+               padding: 12px;
+                         }
+          #productimage{
+               border: 1px solid red;
+               height: 60px;
+               width: 20%;
+          }
+          #productimage img{
+               width: 100%;
+          }
+          #productdata{
+               border: 1px solid rgb(37, 139, 23);
+               height: 100px;
+               width: 80%;
+               line-height: 8px;
+          }
+          #deleteproduct{
+               border: 1px solid blue;
+               height: 10%;
+          }
+          #quantity{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border: 1px solid red;
+               width: 120px;
+               height: 50px;
+               margin-top: -10px;
+               margin-left: 20px;
+          }
+          #minus,#plus{
+               width: 50px;
+               height: 18px;
+               background-color: rgb(233, 230, 230);
+          }
+          #demoInput{
+               width: 30px;
+               height: 15px;
+               margin-top: -10px;
+               margin-right: -15px;
+              
+          }
+          #pdprice{
+               margin-left: 20px;
+               margin-top: -6px;
+               color: green;
+          }
+          #weight{
+               color: grey;
+          }
+     </style>
+</head>
+<body>
+     
+
+     <div id="cart">
+
+          <div id="cartnav">
+               <div><h2>SHOPPING CART</h2></div>
+               <div><a id="cancel" href="#" class="a">CLOSE <i class="fa-solid fa-minus"></i></a></div>
+          </div>
+          <div id="cart-container">
+               <!-- <div id="productimage"></div>
+               <div id="productdata">
+                    <p>qwerdhftjhgfdfghjkhfdsdfgh</p>
+                    
+                    <p id="weight">weight</p>
+                    <div id="quantity">
+                         <button id="minus" onclick="decrement()">-</button>
+                         <input id="demoInput" type=number value="1" min=1 max=10>
+                         <button id="plus" onclick="increment()">+</button>
+                         <p id="pdprice">price</p>
+                    </div>
+                    
+               </div> -->
+               
+               <div id="deleteproduct">x</div>
+          </div>
+          <hr>
+          <div id="cartamount">
+               <div><h3>SUBTOTAL:</h3></div>
+               <div id="total">000</div>
+          </div>
+          <hr>
+          <p>No tax on fresh fruits. Free shipping above Rs. 350.</p>
+          <button style="color: #98cb4c;">CHECK OUT</button>
+          <button>CONTINUE SHOPPING</button>
+
+     </div>
+     
+</body>
+</html>
+<script src="cart.js"></script>
+<script>
+     
+</script>
+
