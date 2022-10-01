@@ -59,11 +59,9 @@ body {
 }
 #category_section .inner:hover img {
     transform: scale(1.2);
-    
 }
 .card-body  {
    background-color: rgba(0, 0, 0, 0.2);
-     
 }
 .rounded {
     border-radius: .50rem;
@@ -87,7 +85,6 @@ body {
 }
 #kimahi_section img {
     width: 100%;
-    height: ;
 }
 #kimahi_section .kimahi_custom_heading {
     color: #fff;
@@ -136,7 +133,15 @@ body {
     background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");
     padding-bottom: 5rem;
 }
+#kimaye_secret .kimsec-subtitle{
+    color: #222;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: .02em;
+    line-height: 2.45;
+}
 
+/* insta feed */
 #insta-feed .container-fluid{
     padding-top: 6em !important;
     background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");

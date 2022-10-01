@@ -1,0 +1,35 @@
+body{
+     margin: 0px;
+     font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+#footer{
+     background-color: #7d9c5b;
+}
+#footer>div{
+     border: 0px solid red;
+     width: 75%;
+     margin: auto;
+}
+#ftop{
+     display: flex;
+     line-height: 10px;
+     justify-content: space-between;
+     padding: 15px 250px 10px 0px ;
+}
+
+#fbottom{
+     font-size: 17px;
+     display: flex;
+     padding: 15px 20px 25px 0px ;
+     justify-content: space-between;
+}
+#fbottom img{
+     width: 100px;
+}
+h3:hover{
+     cursor: pointer;
+     color:  red;
+}
+hr{
+    border: 0.5px solid rgb(122, 120, 120);
+}

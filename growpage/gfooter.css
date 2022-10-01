@@ -1,0 +1,214 @@
+#footer {
+    padding-top: 20px;
+    margin-top: 70px;
+    height: 220px;
+    background-color: #708949
+}
+
+#footer>:first-child {
+    width: 75%;
+    padding-right: 80px;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(78, 72, 72)
+}
+
+#useless>div {
+    font-weight: bold;
+}
+
+#useless>div:hover {
+    cursor: pointer;
+    color: #b43238
+}
+
+#media>a>img:hover {
+    transition: transform .3s;
+    transform: scale(1.1)
+}
+
+#last {
+    border: px solid;
+    width: 75%;
+    padding-right: 80px;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#last>img {
+    margin-right: -59px;
+    width: 80px
+}
+
+@media all and (min-width: 200px) and (max-width: 750px) {
+    #blog1 {
+        width: 75%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(12, 570px);
+        gap: 50px
+    }
+    #pc {
+        margin-left: 250px;
+    }
+    h4+div {
+        margin-top: -520px;
+    }
+    #blog1>div:nth-child(12)>div {
+        margin-top: -470px;
+    }
+    #blog1>div:nth-child(11)>div {
+        margin-top: -460px;
+    }
+    #blog1>div:nth-child(10)>div {
+        margin-top: -480px;
+    }
+    #blog1>div:nth-child(7)>div {
+        margin-top: -490px;
+    }
+    #blog1>div:nth-child(4)>div {
+        margin-top: -490px;
+    }
+    #blog1>div:nth-child(1)>div {
+        margin-top: -540px;
+    }
+    #blog1>div:nth-child(2)>div {
+        margin-top: -530px;
+    }
+    #header3 {
+        display: flex;
+        display: block;
+        width: auto;
+    }
+    #blog1 {
+        width: 80%;
+    }
+    #grid1 {
+        width: 80%;
+        border: px solid;
+        margin: auto;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 44px; */
+        /* border: 1px solid; */
+        justify-content: center;
+    }
+    /* grid 2 */
+    #bgGreen {
+        /* background-image: url('https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659'); */
+        background-size: cover;
+        height: 150%;
+        border: 1px solid rgb(245, 234, 234);
+        background-repeat: no-repeat;
+    }
+    #grid2 {
+        /* border: 1px solid red; */
+        width: 85%;
+        margin: auto;
+        margin-bottom: 40px;
+        display: block;
+        /* display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px; */
+    }
+    #grid2img {
+        display: block;
+        /* border: 1px solid; */
+        width: 100%;
+        margin: auto;
+        /* width: 100% */
+    }
+    #grid2info {
+        /* border: 1px solid rgb(201, 116, 129); */
+        margin-top: 30px
+    }
+    #haha {
+        font-size: 13px;
+    }
+    #grid2info>div>h2 {
+        font-size: 20px;
+    }
+    #grid2info>div>p {
+        font-size: 12px;
+    }
+    #grid3 {
+        width: 80%;
+        margin: auto;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    #last {
+        font-size: 10px;
+    }
+    #chotu {
+        width: 200px;
+        padding-top: 10px;
+    }
+    #footer>:first-child {
+        display: block;
+    }
+    /* nav css */
+    #topInfo {
+        font-size: 10px;
+    }
+    #nav {
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+        height: auto;
+        background-color: #eeeeea!important;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: -0.5%;
+    }
+    #leftNav {
+        font-size: 12px;
+        display: none;
+    }
+    #leftNav>select {
+        margin-right: 15px;
+    }
+    #nav80 {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #showNav {
+        width: 66px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #eeeeea!important;
+    }
+    #learnNav {
+        width: 74px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #eeeeea!important;
+    }
+    #grow {
+        text-decoration: dashed;
+        color: black;
+        font-size: 12px;
+    }
+    #logoNav {
+        width: 100px;
+    }
+    #rightNav>a>img {
+        height: 20px;
+        margin-left: 14px;
+        border-radius: 15px;
+    }
+    /* nav css end */
+}
