@@ -11,91 +11,91 @@
     #main-div {
         background-color: rgb(236, 236, 236);
     }
-    
+
     #inform {
         display: flex;
         gap: 400px;
         margin-left: 60px;
         padding-top: 40px;
     }
-    
+
     #account-login {
         display: flex;
         margin-left: 0%;
     }
-    
+
     #account-login>a {
         text-decoration: none;
         color: red;
         margin-left: 600px;
     }
-    
+
     #contactinfo {
         margin-left: 60px;
         font-size: 25px;
     }
-    
+
     .email {
         margin-left: 122px;
         height: 32px;
         width: 600px;
         margin-top: 12px;
     }
-    
+
     .check {
         margin-left: 119px;
         margin-top: 10px;
     }
-    
+
     #address>h1 {
         margin-left: 115px;
     }
-    
+
     img {
         margin-left: 100px;
     }
-    
+
     input {
         height: 32px;
     }
-    
+
     #fname {
         margin-left: 120px;
         width: 220px
     }
-    
+
     #lname {
         width: 220px;
     }
-    
+
     #addressname {
         margin-left: 120px;
         width: 448px;
         margin-top: 10px;
     }
-    
+
     #apart {
         margin-left: 120px;
         width: 448px;
         margin-top: 10px;
     }
-    
+
     #city {
         margin-left: 120px;
     }
-    
+
     .three {
         width: 137px;
         margin-right: 10px;
         margin-top: 10px;
     }
-    
+
     #mobile {
         margin-top: 10px;
         width: 448px;
         margin-left: 120px;
     }
-    
+
     button {
         color: whitesmoke;
         background-color: darkgreen;
@@ -117,7 +117,7 @@
                 <div><a href="" style="text-decoration:none;color:red">Login in</a></div>
             </div>
         </div>
-        <input type="Email" placeholder="Email" class="email">
+        <input type="Email" placeholder="Email" class="email" id="email">
         <br>
         <input type="checkbox" class="check">
         <lable>Get order notification and delivery updates</lable>
@@ -125,14 +125,17 @@
             <h1>Shipping address</h1>
             <input type="text" placeholder="First Name" id="fname">
             <input type="text" placeholder="Last Name" id="lname"><br>
-            <input type="text" placeholder="Address" id="addressname"><br><input type="text" placeholder="Apartments,suits etc(optional) " id="apart"><br>
-            <input type="text" placeholder="City" id="city" class="three"><input type="text" placeholder="State" id="state" class="three"><input type="text" placeholder="PIN code" id="pin" class="three"><br>
+            <input type="text" placeholder="Address" id="addressname"><br>
+            <input type="text"
+                placeholder="Apartments,suits etc(optional) " id="apart"><br>
+            <input type="text" placeholder="City" id="city" class="three"><input type="text" placeholder="State"
+                id="state" class="three"><input type="text" placeholder="PIN code" id="pin" class="three"><br>
             <input type="Number" placeholder="Mobile Number for Order and Delivery Updates" id="mobile"><br>
             <input type="checkbox" class="check">
             <label for="">Save this information for next time</label>
 
             <div id="last">
-                <button>Continue to payment</button>
+                <button id="order">Place order</button>
                 <a href="">Return cart</a>
             </div>
 
@@ -142,3 +145,4 @@
 </body>
 
 </html>
+<script src="./checkout.js"></script>

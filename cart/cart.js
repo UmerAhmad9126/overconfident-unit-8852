@@ -1,77 +1,44 @@
 
-let cartItem = JSON.parse(localStorage.getItem("cart_item")) || []
-console.log('cartItem:', cartItem)
-let cart_container = document.getElementById("cart-container");
-let cart_container2 = document.getElementById("cart-container2");
 
-
-let count = 1;
-let total_price;
-
-
-cartItem.forEach(el => {
-
-     let productimage = document.createElement("div");
-     productimage.id = "productimage"
-     let image = document.createElement("img")
-     image.src = el.img;
-     productimage.append(image);
-     // ----------------------------------------------//
-     let product_details = document.createElement("div");
-     product_details.id = "productdata"
-     let p = document.createElement("p");
-     p.innerText = el.name;
-
-     //----------------------------------------------//
-     let quantity_div = document.createElement("div");
-     quantity_div.id = "quantity";
-
-
-
-     //button for quantity inc and dec
-
-     let input = document.createElement("span");
-     input.id = "demoInput"
-     input.innerText = count
-
-
-     let minus_btn = document.createElement("button");
-     minus_btn.id = "minus";
-     minus_btn.innerText = "-"
-     minus_btn.addEventListener("click", function () {
-          count--
-          input.innerText = count
-     });
-
-
-
-     let plus_btn = document.createElement("button");
-     plus_btn.id = "plus";
-     plus_btn.innerText = "+"
-     plus_btn.addEventListener("click", function () {
-          count++
-          // console.log('count:', count)
-          input.innerText = count
-
-     });
-     
-     total_price = count * el.price
-     console.log('total_price:', total_price)
-
-     let price = document.createElement("p");
-     price.innerText = el.price;
-     price.id = "pdprice"
-     quantity_div.append(minus_btn, input, plus_btn, price);
-     product_details.append(p, quantity_div);
-
-     cart_container2.append(productimage, product_details)
-     cart_container.append(cart_container2);
-
-});
+import { footer } from "../components/footer.js";
+let footer_div = document.getElementById("footer");
+footer_div.innerHTML = footer();
 
 
 
 
+let parent = document.getElementById("products");
+let total_amount = document.getElementById("totalAmount");
+let cart = JSON.parse(localStorage.getItem("cart_item"))
+console.log(cart)
+let total = 0;
+function showProducts() {
+     cart.forEach(function (product) {
+          console.log(product.name);
 
-let total_amount = document.getElementById("total");
-total_amount.innerText = total_price;
+          let div = document.createElement("div");
+
+          let img = document.createElement("img");
+          img.src = product.img;
+
+          let product_price = document.createElement("h4");
+          product_price.textContent = '₹' + product.price;
+
+          let product_name = document.createElement("p");
+          product_name.textContent = product.name;
+
+          let addtocart_btn = document.createElement("button");
+          addtocart_btn.innerText = "Added";
+
+          addtocart_btn.onclick = function () {
+               addtoCart(product);
+          };
+          total += Number(product.price);
+          total_amount.textContent = '₹' + total
+          div.append(img, product_name, product_price, addtocart_btn);
+
+          parent.append(div);
+
+     })
+}
+showProducts()

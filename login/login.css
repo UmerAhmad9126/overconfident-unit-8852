@@ -1,0 +1,205 @@
+#login_sec{
+    /* padding-bottom: 20px; */
+    height: 790px;
+}
+#login_main_div{
+    margin-top: 40px;
+    border: 1px solid pink;
+    display: flex;
+    background-image: url('https://cdn.shopify.com/s/files/1/0449/5225/6667/files/bg.jpg?v=1600179875');
+    background-repeat: no-repeat;
+}
+#login_last_div{
+    /* border: 1px solid pink; */
+    display: flex;
+    /* height: 300px; */
+    background-image: url('https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456');
+    padding-top: 50px;
+}
+#login_last_div>img{
+    padding-top: 80px;
+}
+#c_div{
+    padding-top: 2%;
+    height: 60%;
+    width: 30%;
+}
+#heart{
+    display: grid;
+    margin : auto;
+    text-align: center;
+}
+#heart h1{
+    color: rgb(75, 72, 72);
+    font-family: 'Caveat Brush', cursive;
+    font-size: 3.2em;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    line-height: 1.18;
+    text-transform: uppercase;
+}
+#heart img{
+    width: 100%;
+    height: 80%;
+}
+#login_side_sec{
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: 600px;
+}
+#login_side_sec img{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 580px;
+    margin-top: 30%;
+}
+#left_img{
+    /* border: 1px solid green; */
+    /* padding-top: 15%; */
+    padding-left: 40%; 
+}
+
+
+#signup, #login{
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 1px solid grey;
+    width: 56%;
+    /* height: 200px; */
+    padding-bottom: 0.5%;
+    position: sticky;
+    /* z-index: 500; */
+    margin-left: 15%;
+    margin-top: 3.5%;
+}
+.h3{
+    color: white;
+    font-size: 24px;
+}
+.a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.span{
+    color: red;
+}
+.label{
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#firstName,#lastName,#email,#password,.input_email,.input_password{
+    margin-bottom: 5%;
+    height: 35px;
+}
+.button_clicked{
+    padding: 4%;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+.button_clicked:hover{
+    background-color: black;
+    color: white;
+
+}
+
+/* Signup Page */
+#Sign_top{
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    margin-bottom: 5%;
+}
+#fdiv,#gdiv{
+    color: #FFF;
+    padding-left: 5%;
+    height: 45px;
+    padding-right: 5%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 15px;
+}
+#fdiv{
+    background-color: #3b5998;
+}
+#gdiv{
+    background-color: #dd4b39;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+#reg{
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: -6%;
+}
+#signup hr{
+    width: 80%;
+    margin-bottom: 3%;
+    margin-top: 9%;
+}
+#signup div>p:nth-child(2){
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+#signup p,#logo_sec>p{
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+#log{
+    width: 20%;
+    margin: auto;
+}
+#log:hover{
+    background-color: white;
+    color: black;
+}
+#signup img,#login img{
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+}
+#logo_sec{
+    width: 80%;
+    margin: auto;
+}
+#login>div:nth-child(3){
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#creat{
+    width: 60%;
+    margin: auto;
+}
+#creat>button:hover{
+    background-color: black;
+    color: white;
+}

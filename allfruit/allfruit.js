@@ -130,13 +130,15 @@ let cartArr = JSON.parse(localStorage.getItem("cart_item")) || [];
 
 
 
-import { navbar } from "./components/navbar.js";
+import { navbar } from "../components/navbar.js";
 let navbar_div = document.getElementById("navbar");
 navbar_div.innerHTML = navbar();
 
-import { footer } from "./components/footer.js";
+import { footer } from "../components/footer.js";
 let footer_div = document.getElementById("footer");
 footer_div.innerHTML = footer();
+
+//for sticky
 
 window.onscroll = function () { myFunction() };
 var header = document.getElementById("menu");
@@ -148,8 +150,6 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 };
-
-
 
 
 
@@ -189,17 +189,28 @@ const appendData = (data) => {
 }
 appendData(data);
 
-let item_count = document.querySelector(".cart_add");
-item_count.innerHTML = cartArr.length;
+// let item_count = document.querySelector(".cart_add");
+// item_count.innerHTML = cartArr.length;
 
 const addtoCart = (index) => {
     cartArr.push(data[index]);
     localStorage.setItem("cart_item", JSON.stringify(cartArr))
 }
 
+//responsive side menu
 
+// function myFunction() {
+//     if (window.pageYOffset > sticky) {
+//       header.classList.add("sticky");
+//     } else {
+//       header.classList.remove("sticky");
+//     }
+//   }
 
-
+let grow_link = document.getElementById("grow_link");
+grow_link.addEventListener("click", function () {
+    window.location.href = "../growpage/grow.html"
+});
 
 
 

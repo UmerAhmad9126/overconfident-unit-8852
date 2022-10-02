@@ -23,3 +23,6 @@ function myFunction() {
 let cartArr = JSON.parse(localStorage.getItem("cart_item")) || [];
 let item_count = document.querySelector(".cart_add");
 item_count.innerHTML = cartArr.length;
+
+
+
