@@ -10,11 +10,11 @@ window.onscroll = function () { myFunction() };
 var header = document.getElementById("menu");
 var sticky = header.offsetTop;
 function myFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 };
 
 document.getElementById("signup").style.display = "none";
@@ -35,18 +35,23 @@ New_User.addEventListener("click", function () {
 
 
 let Get_User_Data = JSON.parse(localStorage.getItem("User_Data"));
+console.log('Get_User_Data:', Get_User_Data)
 
 let login = document.querySelector("#login_btn");
 login.addEventListener("click", function () {
-  Get_User_Data.forEach(function (el) {
-    let email = document.querySelector(".input_email").value;
-    let password = document.querySelector(".input_password").value;
 
-    if (email == el.email && password == el.password) {
-      alert("Login successful!!");
-      window.location.href = "../index.html";
-    } else alert("Please enter valid credentials.");
-  });
+  let email_id = document.querySelector(".input_email").value;
+  console.log('email_id:', email_id)
+  let password = document.querySelector(".input_password").value;
+
+  if (email_id == Get_User_Data.email && password == Get_User_Data.password) {
+    alert("Login successful!!");
+    window.location.href = "../index.html";
+  } else {
+    alert("Please enter valid credentials.");
+    window.location.href
+  }
+
 });
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==--=-=
@@ -56,7 +61,6 @@ let fName = document.querySelector("#firstName");
 let lName = document.querySelector("#lastName");
 let email = document.querySelector(".e-mail");
 let password = document.querySelector(".pass-word");
-let User_Data = [];
 register.addEventListener("click", function () {
   let Rej_data = {
     fName: firstName.value,
@@ -64,12 +68,12 @@ register.addEventListener("click", function () {
     email: email.value,
     password: password.value,
   };
-  User_Data.push(Rej_data);
 
-  localStorage.setItem("User_Data", JSON.stringify(User_Data));
-  console.log("User_signup_data", User_Data);
 
-  
+  localStorage.setItem("User_Data", JSON.stringify(Rej_data));
+  console.log("User_signup_data", Rej_data);
+
+
   alert("Registration successful!");
 
   document.getElementById("login").style.display = "block";
