@@ -7,7 +7,7 @@ Builded a clone kimaye website. Kimaye is consistently delivering the safest and
 
 
 ## Deployed Link
-
+https://timely-dragon-746e42.netlify.app/
 
 ## Tech Stacks
 
